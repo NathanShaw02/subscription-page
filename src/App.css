@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+.productHeading {
+  font-family: monospace;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logoDiv {
+  display:flex;
+  height: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.headingDiv {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  flex-grow: 1;
+  justify-content: right;
+  gap: 7%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headingTextSection {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 40%;
+}
+
+.purchaseOptions {
+
+  display :flex;
+  align-items: flex-start;
+  flex: 1;
+  padding-left: 300px;
+  padding-top: 50px;
+  gap:15%;
+
+}
+
+.individualPurchaseOptionDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px dashed #000;
+  width: 30%;
+  height: 47%;
+}
+
+.productImage{
+  width:100%;
+}
+
+.productTitle{
+  color:red;
+}
+
+.productBuyButton{
+  height: 75px;
+  width: 80%;
+}
+
+.purchaseDisclaimer{
+  font-style: italic;
+}
+
+.productDescription{
+  text-align: center;
+}
+
+.belowHeading {
+
+  display: flex;
+  width: 100vw;
+  flex-grow: 1;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebarSection {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #000;
+  align-items: center;
+  width: 15vw;
+  min-width: 192px; /*maximum iamge pixel size*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebarClass {
+  display: flex;
+  padding-right: 3%;
+}
+
+
+.appContainer {
+  width: 100vw;
+  min-width: 100%;
 }
